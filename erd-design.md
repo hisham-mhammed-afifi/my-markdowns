@@ -640,7 +640,7 @@ erDiagram
     USER {
         int UserID PK
         string Name
-        string Email UNIQUE
+        string Email UK
         string Password
         string Role
     }
@@ -678,7 +678,7 @@ erDiagram
     }
     CART {
         int CartID PK
-        int UserID FK UNIQUE
+        int UserID FK UK
         date LastUpdated
     }
     CARTITEM {
@@ -689,7 +689,7 @@ erDiagram
     }
     PAYMENT {
         int PaymentID PK
-        int OrderID FK UNIQUE
+        int OrderID FK UK
         string PaymentMethod
         string PaymentStatus
         date PaymentDate
@@ -960,7 +960,7 @@ erDiagram
     EMPLOYEE {
         int EmployeeID PK
         string Name
-        string Email UNIQUE
+        string Email UK
         string Phone
         date HireDate
         string JobTitle
