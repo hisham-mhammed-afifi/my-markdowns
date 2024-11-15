@@ -678,7 +678,7 @@ erDiagram
     }
     CART {
         int CartID PK
-        int UserID FK UK
+        int UserID FK
         date LastUpdated
     }
     CARTITEM {
@@ -689,7 +689,7 @@ erDiagram
     }
     PAYMENT {
         int PaymentID PK
-        int OrderID FK UK
+        int OrderID FK
         string PaymentMethod
         string PaymentStatus
         date PaymentDate
