@@ -200,7 +200,7 @@ erDiagram
     USER {
         int UserID PK
         string Name
-        string Email UNIQUE
+        string Email UK
         string Password
     }
     PRODUCT {
